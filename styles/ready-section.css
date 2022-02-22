@@ -18,7 +18,7 @@
 
 .ready-banner {
     flex: 1;
-    background: url('/assets/main/ready-section/ready-banner.png') center
+    background: url('../assets/main/ready-section/ready-banner.png') center
         no-repeat;
     background-size: contain;
     max-width: 637px;

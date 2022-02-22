@@ -127,15 +127,15 @@
         width: 95%;
     }
     .carousel-text {
-        font-size: 245%;
+        font-size: 225%;
     }
     .carousel-author {
-        font-size: 160%;
+        font-size: 140%;
     }
     .carousel-author-position {
-        font-size: 160%;
+        font-size: 140%;
     }
     .carousel-container {
-        min-height: 450px;
+        min-height: 420px;
     }
 }
