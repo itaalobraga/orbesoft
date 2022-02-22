@@ -1,0 +1,112 @@
+#companies {
+    display: flex;
+    justify-content: center;
+    padding: 5.5rem 0;
+    background-color: #FDFCFC;
+    width: 100%;
+}
+
+.container-companies {
+    min-height: 1264px;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.companies-text {
+    padding: 0 3%;
+}
+
+.companies-text h1 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #292929;
+}
+
+.companies-banners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.companies-banners > img {
+    transition: 0.4s;
+}
+
+.companies-banners > img:hover {
+    transform: scale(1.2);
+}
+
+.companies-banners-infos {
+    display: flex;
+    justify-content: center;
+    gap: 5.5rem;
+    width: 100%;
+}
+
+.companie-banner-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.companie-banner {
+    background-image: url('../assets/main/companies-section/companies-banner/vale-banner.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-width: 531px;
+    height: 373px;
+}
+
+.second {
+    background-image: url('../assets/main/companies-section/companies-banner/jeep-banner.png');
+}
+
+.companie-banner-info p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 0.01em;
+    color: #292929;
+    width: 100%;
+}
+
+.companie-banner-info a {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;
+    text-decoration-line: underline;
+    color: #f65423;
+    opacity: 0.75;
+}
+
+@media screen and (max-width: 1010px) {
+    .companies-banners-infos {
+        flex-wrap: wrap;
+    }
+    .companies-banners {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 566px) {
+    .container-companies {
+        margin: 4% 0;
+        gap: 3.5rem;
+    }
+    .companie-banner-info {
+        margin-bottom: 2%;
+    }
+    .companie-banner {
+        height: 273px;
+    }
+}

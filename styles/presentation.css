@@ -1,0 +1,81 @@
+.presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 5.5rem 0;
+}
+
+.container-presentation {
+    gap: 9.5%;
+}
+
+.presentation-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+}
+
+.presentation-arrow {
+    transition: 0.3s;
+    cursor: pointer;
+    width: max-content;
+}
+
+.presentation-arrow:hover {
+    transform: translateY(50%);
+}
+
+.presentation-banner {
+    transition: 1s;
+}
+
+.presentation-banner:hover {
+    transform: rotate(360deg);
+}
+
+.presentation-text h1 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5rem;
+    letter-spacing: 0.01em;
+    color: #292929;
+}
+
+.presentation-text p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    letter-spacing: 0.01em;
+    color: #72777b;
+}
+
+@media screen and (max-width: 1010px) {
+    .container-presentation {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .presentation-banner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .presentation-banner > img {
+        width: 90%;
+    }
+
+    .presentation-arrow {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .presentation-banner > img {
+        width: 70%;
+    }
+}

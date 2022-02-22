@@ -1,0 +1,95 @@
+#solutions {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5.5rem 0;
+}
+
+.container-solutions {
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8rem;
+    padding: 5.5rem;
+}
+
+.solutions-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+}
+
+.solutions-text h1 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: 0.01em;
+    color: #292929;
+}
+
+.solutions-text p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25rem;
+    color: #5a5f62;
+}
+
+.solutions-text > span {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #f65423;
+
+    background: #f5f5f5;
+    border-radius: 24px;
+    padding: 12px 20px;
+    width: max-content;
+}
+
+/* *********** SOLUTIONS CARDS ************** */
+.solutions-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 700px;
+    gap: 4.8rem;
+}
+
+.solution-card {
+    max-width: 260px;
+}
+
+.card-icon {
+    border-radius: 8px;
+    padding: 8px;
+    width: max-content;
+}
+
+.card-title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;
+    color: #000000;
+
+    padding: 1rem 0 1.5rem 0;
+}
+
+.card-paragraph {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    color: #000000;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 1010px) {
+    .container-solutions {
+        flex-wrap: wrap;
+    }
+}

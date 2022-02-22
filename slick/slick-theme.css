@@ -1,0 +1,89 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list {
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/slick.woff') format('woff'),
+        url('./fonts/slick.ttf') format('truetype'),
+        url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+
+    display: block;
+
+    height: 24px;
+    width: 38px;
+    padding: 0;
+
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+    background: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    z-index: 5;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    outline: none;
+    opacity: 1;
+}
+.slick-prev:hover .slick-prev:focus .slick-next:hover,
+.slick-next:focus {
+    opacity: 1;
+}
+.slick-prev.slick-disabled {
+    background-image: url('../assets/main/carousel-section/prev-arrow.png');
+    transform: rotate(0deg);
+    opacity: 0.25;
+    cursor: default;
+}
+
+.slick-next.slick-disabled {
+    background-image: url('../assets/main/carousel-section/prev-arrow.png');
+    transform: rotate(180deg);
+    opacity: 0.25;
+    cursor: default;
+}
+
+.slick-prev {
+    background-image: url('../assets/main/carousel-section/next-arrow.png');
+
+    transform: rotate(-180deg);
+    right: 85px;
+    bottom: 22px;
+}
+
+.slick-next {
+    background-image: url('../assets/main/carousel-section/next-arrow.png');
+
+    right: 35px;
+    bottom: 22px;
+}
+
+@media screen and (max-width: 1280px) {
+    .slick-prev,
+    .slick-next {
+        bottom: 10px;
+    }
+}

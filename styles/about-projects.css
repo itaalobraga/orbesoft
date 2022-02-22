@@ -1,0 +1,135 @@
+#about-projects {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5.5rem 0;
+    background-color: #fdfcfc;
+}
+
+.container-about-projects {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8rem 0;
+    padding: 5.5rem;
+}
+
+.about-title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5rem;
+    letter-spacing: 0.01em;
+    color: #292929;
+    width: 35%;
+}
+
+.about-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.about-card {
+    flex: 1;
+    margin-right: 4.1rem;
+}
+
+.about-card:last-child {
+    margin: 0;
+}
+
+.card-number {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;
+    color: #f65423;
+}
+
+.card-about-project-title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    color: #f65423;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.card-divisor {
+    display: flex;
+    align-items: center;
+    background: #f65423;
+    border: 1px solid #cccccc;
+    position: relative;
+    width: 86.5%;
+    margin-bottom: 1.12rem;
+}
+
+.card-divisor::before {
+    content: '';
+    background: #f65423;
+    border: 1px solid #f65423;
+    position: absolute;
+    left: 0;
+    width: 25%;
+}
+
+.card-divisor.two::before {
+    content: '';
+    background: #f65423;
+    border: 1px solid #f65423;
+    position: absolute;
+    left: 0;
+    width: 50%;
+}
+
+.card-divisor.three::before {
+    content: '';
+    background: #f65423;
+    border: 1px solid #f65423;
+    position: absolute;
+    left: 0;
+    width: 75%;
+}
+
+.card-divisor.four::before {
+    content: '';
+    background: #f65423;
+    border: 1px solid #f65423;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.card-paragraph-about-projects {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    color: #292929;
+    text-align: left;
+    max-width: 90%;
+}
+
+@media screen and (max-width: 966px) {
+    .container-about-projects {
+        align-items: center;
+    }
+
+    .about-title {
+        width: 100%;
+        text-align: left;
+    }
+
+    .about-cards {
+        flex-direction: column;
+        min-height: 700px;
+    }
+
+    .about-card {
+        max-width: 500px;
+        margin: 0;
+    }
+}
