@@ -89,7 +89,7 @@
 
 .selected::after {
     content: '';
-    background-image: url('/assets/nav-bar/custom-select-input/arrow.png');
+    background-image: url('../assets/nav-bar/custom-select-input/arrow.png');
     background-size: contain;
     background-repeat: no-repeat;
 
