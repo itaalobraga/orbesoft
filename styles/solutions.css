@@ -54,11 +54,13 @@
     justify-content: center;
     flex-wrap: wrap;
     max-width: 700px;
+    width: 100%;
     gap: 4.8rem;
 }
 
 .solution-card {
     max-width: 260px;
+    width: 100%;
 }
 
 .card-icon {
@@ -88,8 +90,17 @@
     opacity: 0.5;
 }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1376px) {
     .container-solutions {
         flex-wrap: wrap;
     }
 }
+
+@media screen and (max-width: 741px) {
+    .solutions-cards {
+        justify-content: left;
+    }
+    .solution-card {
+        max-width: none;
+    }
+} 
