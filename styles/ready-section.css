@@ -1,28 +1,30 @@
 #ready-to-expand {
     display: flex;
     justify-content: center;
+    max-width: 1440px;
     width: 100%;
     background-color: #fdfcfc;
 }
 
 .container-ready {
-    align-items: flex-start;
     justify-content: space-between;
-    padding: 5.5rem 5.5rem 0 5.5rem;
-    min-height: 600px;
+    align-items: flex-start;
+    height: 100%;
+    gap: 2.3rem;
+    padding: 3.6rem 5.5rem 0 5.5rem;
 }
 
 .ready-text {
-    flex: 0.4;
+    width: 40%;
 }
 
 .ready-banner {
-    flex: 1;
-    background: url('../assets/main/ready-section/ready-banner.png') center
-        no-repeat;
-    background-size: contain;
-    max-width: 637px;
-    height: 542px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.ready-banner > img {
+    width: 100%;
 }
 
 .ready-text h1 {
@@ -54,21 +56,13 @@
     border-radius: 24px;
 }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1116px) {
     .container-ready {
-        flex-direction: column;
-        align-items: center;
-        
-    }
-
-    .ready-text {
-        margin-bottom: 2rem;
-    }
-
-    .ready-banner {
-        flex: .9;
+        justify-content: center;
+        flex-wrap: wrap;
         width: 100%;
-        background-position: bottom;
     }
-
+    .ready-text {
+        width: 100%;
+    }
 }   

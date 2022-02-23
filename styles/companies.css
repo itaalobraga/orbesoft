@@ -7,9 +7,10 @@
 }
 
 .container-companies {
-    min-height: 1264px;
-    justify-content: space-around;
+    min-height: 1064px;
     flex-direction: column;
+    justify-content: center;
+    gap: 7rem;
 }
 
 .companies-text {
@@ -31,6 +32,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 1157,8px;
     width: 100%;
 }
 
@@ -52,22 +54,25 @@
 .companie-banner-info {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 2.5rem;
 }
 
-.companie-banner {
-    background-image: url('../assets/main/companies-section/companies-banner/vale-banner.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
+.companie-banner > img {
     max-width: 531px;
-    height: 373px;
+    width: 100%;
+
 }
 
-.second {
-    background-image: url('../assets/main/companies-section/companies-banner/jeep-banner.png');
+.companie-banner-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 547px;
+    width: 100%;
 }
 
-.companie-banner-info p {
+.companie-banner-text p {
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
@@ -77,7 +82,7 @@
     width: 100%;
 }
 
-.companie-banner-info a {
+.companie-banner-text a {
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
@@ -92,6 +97,9 @@
     .companies-banners-infos {
         flex-wrap: wrap;
     }
+    .companie-banner-info {
+        align-items: center;
+    }
     .companies-banners {
         flex-direction: column;
         gap: 3rem;
@@ -102,11 +110,5 @@
     .container-companies {
         margin: 4% 0;
         gap: 3.5rem;
-    }
-    .companie-banner-info {
-        margin-bottom: 2%;
-    }
-    .companie-banner {
-        height: 273px;
     }
 }
