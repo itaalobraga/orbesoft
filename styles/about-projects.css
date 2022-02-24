@@ -28,11 +28,6 @@
     justify-content: center;
 }
 
-.about-card {
-    flex: 1;
-    margin-right: 4.1rem;
-}
-
 .about-card:last-child {
     margin: 0;
 }

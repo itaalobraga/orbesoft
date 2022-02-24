@@ -46,9 +46,16 @@
     border-radius: 24px;
     padding: 12px 20px;
     width: max-content;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.solutions-text > span:hover {
+    background-color: #E0E0E0;
 }
 
 /* *********** SOLUTIONS CARDS ************** */
+
 .solutions-cards {
     display: flex;
     justify-content: center;
@@ -64,9 +71,13 @@
 }
 
 .card-icon {
+    display: flex;
+    align-items: center;
+    
     border-radius: 8px;
     padding: 8px;
-    width: max-content;
+    max-width: 48px;
+    width: 100%;
 }
 
 .card-title {

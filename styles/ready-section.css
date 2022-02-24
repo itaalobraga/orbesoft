@@ -54,6 +54,12 @@
     padding: 12px 20px;
     background: #f65423;
     border-radius: 24px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.ready-text span:hover {
+    opacity: .75;
 }
 
 @media screen and (max-width: 1116px) {
@@ -65,4 +71,4 @@
     .ready-text {
         width: 100%;
     }
-}   
+}

@@ -6,6 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Orbesoft</title>
         <script
+            type="text/javascript"
+            src="//code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
             src="https://kit.fontawesome.com/7d6f1dcf72.js"
             crossorigin="anonymous"
         ></script>
@@ -53,16 +61,16 @@
                         <img src="./assets/nav-bar/logo.png" alt="" />
                     </div>
                     <div class="menu">
-                        <a href="#companies">Clientes</a>
-                        <a href="#solutions">Soluções</a>
-                        <a href="#about-projects">Empresa</a>
+                        <a href="#companies" id="menu-clients">Clientes</a>
+                        <a href="#solutions" id="menu-solutions">Soluções</a>
+                        <a href="#about-projects" id="menu-company">Empresa</a>
                     </div>
                 </div>
                 <div class="menu-wrapper-two">
                     <div class="select-box">
                         <div class="select-flag"></div>
                         <div class="options-container">
-                            <div class="option">
+                            <div class="option" id="select-pt">
                                 <input
                                     type="radio"
                                     class="radio"
@@ -71,7 +79,7 @@
                                 />
                                 <label for="brasil">Brasil</label>
                             </div>
-                            <div class="option">
+                            <div class="option" id="select-en">
                                 <input
                                     type="radio"
                                     class="radio"
@@ -84,7 +92,7 @@
                         <div class="selected">Brasil</div>
                     </div>
                     <div class="btn-contact-menu">
-                        <a href="#">CONTATO</a>
+                        <a href="#" id="btn-contact">CONTATO</a>
                         <img src="./assets/nav-bar/arrow-right.png" alt="" />
                     </div>
                 </div>
@@ -107,6 +115,31 @@
                     </div>
 
                     <div class="mobile-wrapper">
+                        <div class="select-box-mobile">
+                            <div class="select-flag-mobile"></div>
+                            <div class="options-container-mobile">
+                                <div class="option-mobile">
+                                    <input
+                                        type="radio"
+                                        name="option"
+                                        id="brasil"
+                                        class="radio-mobile"
+                                    />
+                                    <label for="brasil">Brasil</label>
+                                </div>
+                                <div class="option-mobile">
+                                    <input
+                                        type="radio"
+                                        name="option"
+                                        id="eua"
+                                        class="radio-mobile"
+                                    />
+                                    <label for="eua">EUA</label>
+                                </div>
+                            </div>
+                            <div class="selected-mobile">Brasil</div>
+                        </div>
+
                         <div class="btn-contact-menu">
                             <a href="#">CONTATO</a>
                             <img
@@ -127,7 +160,7 @@
                     style="z-index: -9"
                 >
                     <div class="presentation-text">
-                        <h1>
+                        <h1 id="presentation-title">
                             Explore novas formas de vender e entregar inovando
                             seu negócio
                         </h1>
@@ -164,29 +197,37 @@
                     <div class="companies-banners">
                         <img
                             src="./assets/main/companies-section/companies-banner/jeep.png"
-                            alt="" style="max-width: 101px; width: 100%;"
+                            alt=""
+                            style="max-width: 101px; width: 100%"
                         />
                         <img
                             src="./assets/main/companies-section/companies-banner/vale.png"
-                            alt="" style="max-width: 149px; width: 100%;"
+                            alt=""
+                            style="max-width: 149px; width: 100%"
                         />
                         <img
                             src="./assets/main/companies-section/companies-banner/gerdau.png"
-                            alt="" style="max-width: 174px; width: 100%;"
+                            alt=""
+                            style="max-width: 174px; width: 100%"
                         />
                         <img
                             src="./assets/main/companies-section/companies-banner/marell.png"
-                            alt="" style="max-width: 125px; width: 100%;"
+                            alt=""
+                            style="max-width: 125px; width: 100%"
                         />
                         <img
                             src="./assets/main/companies-section/companies-banner/editora.png"
-                            alt="" style="max-width: 189px; width: 100%;"
+                            alt=""
+                            style="max-width: 189px; width: 100%"
                         />
                     </div>
                     <div class="companies-banners-infos">
                         <div class="companie-banner-info">
                             <div class="companie-banner">
-                                <img src="assets/main/companies-section/companies-banner/vale-banner.png" alt="">
+                                <img
+                                    src="assets/main/companies-section/companies-banner/vale-banner.png"
+                                    alt=""
+                                />
                             </div>
                             <div class="companie-banner-text">
                                 <p>
@@ -198,7 +239,10 @@
                         </div>
                         <div class="companie-banner-info">
                             <div class="companie-banner second">
-                                <img src="assets/main/companies-section/companies-banner/jeep-banner.png" alt="">
+                                <img
+                                    src="assets/main/companies-section/companies-banner/jeep-banner.png"
+                                    alt=""
+                                />
                             </div>
                             <div class="companie-banner-text">
                                 <p>
@@ -490,31 +534,28 @@
                             Trabalharemos de forma colaborativa para criar um
                             projeto realmente incrível.
                         </p>
-                        <span>Saiba Mais</span>
+                        <span>Saiba mais</span>
                     </div>
                     <div class="ready-banner">
-                        <img src="assets/main/ready-section/ready-banner.png" alt="">
+                        <img
+                            src="assets/main/ready-section/ready-banner.png"
+                            alt=""
+                        />
                     </div>
                 </div>
             </section>
         </main>
         <footer id="footer">© Orbe Soft 2017 - 2022</footer>
 
+        <script src="./scripts/carousel.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+
+        <script src="./scripts/translations/index.js" type="module"></script>
         <script src="scripts/menu-mobile.js"></script>
         <script src="scripts/custom-select.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
-        <script
-            type="text/javascript"
-            src="//code.jquery.com/jquery-1.11.0.min.js"
-        ></script>
-        <script
-            type="text/javascript"
-            src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-        ></script>
-        <script src="./scripts/carousel.js"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
     </body>
 </html>
