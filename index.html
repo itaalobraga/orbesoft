@@ -24,14 +24,19 @@
             rel="stylesheet"
         />
         <link
-            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
             rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
         <link
             rel="shortcut icon"
             href="./assets/favicon/favicon.svg"
             type="image/x-icon"
         />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <link rel="stylesheet" href="./styles/reset.css" />
         <link rel="stylesheet" href="./styles/nav.css" />
         <link rel="stylesheet" href="./styles/nav-mobile.css" />
@@ -177,396 +182,407 @@
             </nav>
         </header>
         <main id="main">
-            <section
-                class="presentation animate__animated animate__animated animate__fadeInDown"
-            >
-                <div class="container container-presentation">
-                    <div class="presentation-text">
-                        <h1 id="presentation-title">
-                            Explore novas formas de vender e entregar inovando
-                            seu negócio
-                        </h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nam imperdiet volutpat ante in interdum.
-                        </p>
-                        <div class="presentation-arrow">
-                            <a href="#companies">
-                                <img
-                                    src="./assets/main/presentation-section/arrow.png"
-                                    alt=""
-                                />
-                            </a>
+            <div class="animate__animated animate__bounceInDown">
+                <section class="presentation">
+                    <div class="container container-presentation">
+                        <div class="presentation-text">
+                            <h1 id="presentation-title">
+                                Explore novas formas de vender e entregar
+                                inovando seu negócio
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Nam imperdiet volutpat ante in
+                                interdum.
+                            </p>
+                            <div class="presentation-arrow">
+                                <a href="#companies">
+                                    <img
+                                        src="./assets/main/presentation-section/arrow.png"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="presentation-banner">
+                            <img
+                                src="./assets/main/presentation-section/banner.png"
+                                alt=""
+                            />
                         </div>
                     </div>
-                    <div class="presentation-banner">
-                        <img
-                            src="./assets/main/presentation-section/banner.png"
-                            alt=""
-                        />
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
-            <section id="companies">
-                <div class="container container-companies">
-                    <div class="companies-text">
-                        <h1>
-                            Colaboramos com empresas ambiciosas, não importa o
-                            tamanho ou área de atuação
-                        </h1>
-                    </div>
-                    <div class="companies-banners">
-                        <img
-                            src="./assets/main/companies-section/companies-banner/jeep.png"
-                            alt=""
-                            style="max-width: 101px; width: 100%"
-                        />
-                        <img
-                            src="./assets/main/companies-section/companies-banner/vale.png"
-                            alt=""
-                            style="max-width: 149px; width: 100%"
-                        />
-                        <img
-                            src="./assets/main/companies-section/companies-banner/gerdau.png"
-                            alt=""
-                            style="max-width: 174px; width: 100%"
-                        />
-                        <img
-                            src="./assets/main/companies-section/companies-banner/marell.png"
-                            alt=""
-                            style="max-width: 125px; width: 100%"
-                        />
-                        <img
-                            src="./assets/main/companies-section/companies-banner/editora.png"
-                            alt=""
-                            style="max-width: 189px; width: 100%"
-                        />
-                    </div>
-                    <div class="companies-banners-infos">
-                        <div class="companie-banner-info">
-                            <div class="companie-banner">
-                                <img
-                                    src="assets/main/companies-section/companies-banner/vale-banner.png"
-                                    alt=""
-                                />
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <section id="companies">
+                    <div class="container container-companies">
+                        <div class="companies-text">
+                            <h1>
+                                Colaboramos com empresas ambiciosas, não importa
+                                o tamanho ou área de atuação
+                            </h1>
+                        </div>
+                        <div class="companies-banners">
+                            <img
+                                src="./assets/main/companies-section/companies-banner/jeep.png"
+                                alt=""
+                                style="max-width: 101px; width: 100%"
+                            />
+                            <img
+                                src="./assets/main/companies-section/companies-banner/vale.png"
+                                alt=""
+                                style="max-width: 149px; width: 100%"
+                            />
+                            <img
+                                src="./assets/main/companies-section/companies-banner/gerdau.png"
+                                alt=""
+                                style="max-width: 174px; width: 100%"
+                            />
+                            <img
+                                src="./assets/main/companies-section/companies-banner/marell.png"
+                                alt=""
+                                style="max-width: 125px; width: 100%"
+                            />
+                            <img
+                                src="./assets/main/companies-section/companies-banner/editora.png"
+                                alt=""
+                                style="max-width: 189px; width: 100%"
+                            />
+                        </div>
+                        <div class="companies-banners-infos">
+                            <div class="companie-banner-info">
+                                <div class="companie-banner">
+                                    <img
+                                        src="assets/main/companies-section/companies-banner/vale-banner.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="companie-banner-text">
+                                    <p>
+                                        Como ajudamos a Vale com um novo sistema
+                                        de treinamentos de segurança
+                                    </p>
+                                    <a href="#">Ver Mais</a>
+                                </div>
                             </div>
-                            <div class="companie-banner-text">
-                                <p>
-                                    Como ajudamos a Vale com um novo sistema de
-                                    treinamentos de segurança
-                                </p>
-                                <a href="#">Ver Mais</a>
+                            <div class="companie-banner-info">
+                                <div class="companie-banner second">
+                                    <img
+                                        src="assets/main/companies-section/companies-banner/jeep-banner.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="companie-banner-text">
+                                    <p>
+                                        Como ajudamos a Jeep com um novo sistema
+                                        de treinamentos de segurança
+                                    </p>
+                                    <a href="#">Ver Mais</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="companie-banner-info">
-                            <div class="companie-banner second">
-                                <img
-                                    src="assets/main/companies-section/companies-banner/jeep-banner.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="companie-banner-text">
-                                <p>
-                                    Como ajudamos a Jeep com um novo sistema de
-                                    treinamentos de segurança
-                                </p>
-                                <a href="#">Ver Mais</a>
-                            </div>
-                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <section class="carousel-section">
-                <div class="carousel">
-                    <div class="carousel-item">
-                        <div class="carousel-wrapper">
-                            <div class="author-img">
-                                <img
-                                    src="assets/main/carousel-section/Rectangle 223.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="carousel-container">
-                                <p class="carousel-text">
-                                    Nós escolhemos a Orbe porque me transmitiu
-                                    segurança, eu tive referências boas e porque
-                                    eles são grandes parceiros.
-                                </p>
-                                <div class="carousel-text-info">
-                                    <div class="companie-logo jeep">
-                                        <img
-                                            src="assets/main/carousel-section/jeep.png"
-                                            alt=""
-                                        />
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <div class="carousel-wrapper">
+                                <div class="author-img">
+                                    <img
+                                        src="assets/main/carousel-section/Rectangle 223.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="carousel-container">
+                                    <p class="carousel-text">
+                                        Nós escolhemos a Orbe porque me transmitiu
+                                        segurança, eu tive referências boas e porque
+                                        eles são grandes parceiros.
+                                    </p>
+                                    <div class="carousel-text-info">
+                                        <div class="companie-logo jeep">
+                                            <img
+                                                src="assets/main/carousel-section/jeep.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="divisor"></div>
+                                        <div class="carousel-text-author">
+                                            <span class="carousel-author"
+                                                >Eduardo Carlos</span
+                                            >
+                                            <span class="carousel-author-position">
+                                                Head of product Jeep
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div class="divisor"></div>
-                                    <div class="carousel-text-author">
-                                        <span class="carousel-author"
-                                            >Eduardo Carlos</span
-                                        >
-                                        <span class="carousel-author-position">
-                                            Head of product Jeep
-                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-wrapper">
+                                <div class="author-img">
+                                    <img
+                                        src="assets/main/carousel-section/Rectangle 223.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="carousel-container">
+                                    <p class="carousel-text">
+                                        Nós escolhemos a Orbe porque me transmitiu
+                                        segurança, eu tive referências boas e porque
+                                        eles são grandes parceiros.
+                                    </p>
+                                    <div class="carousel-text-info">
+                                        <div class="companie-logo jeep">
+                                            <img
+                                                src="assets/main/carousel-section/jeep.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="divisor"></div>
+                                        <div class="carousel-text-author">
+                                            <span class="carousel-author"
+                                                >Eduardo Carlos</span
+                                            >
+                                            <span class="carousel-author-position">
+                                                Head of product Jeep
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-wrapper">
+                                <div class="author-img">
+                                    <img
+                                        src="assets/main/carousel-section/Rectangle 223.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="carousel-container">
+                                    <p class="carousel-text">
+                                        Nós escolhemos a Orbe porque me transmitiu
+                                        segurança, eu tive referências boas e porque
+                                        eles são grandes parceiros.
+                                    </p>
+                                    <div class="carousel-text-info">
+                                        <div class="companie-logo jeep">
+                                            <img
+                                                src="assets/main/carousel-section/jeep.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="divisor"></div>
+                                        <div class="carousel-text-author">
+                                            <span class="carousel-author"
+                                                >Eduardo Carlos</span
+                                            >
+                                            <span class="carousel-author-position">
+                                                Head of product Jeep
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="carousel-wrapper">
-                            <div class="author-img">
-                                <img
-                                    src="assets/main/carousel-section/Rectangle 223.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="carousel-container">
-                                <p class="carousel-text">
-                                    Nós escolhemos a Orbe porque me transmitiu
-                                    segurança, eu tive referências boas e porque
-                                    eles são grandes parceiros.
-                                </p>
-                                <div class="carousel-text-info">
-                                    <div class="companie-logo jeep">
-                                        <img
-                                            src="assets/main/carousel-section/jeep.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div class="divisor"></div>
-                                    <div class="carousel-text-author">
-                                        <span class="carousel-author"
-                                            >Eduardo Carlos</span
-                                        >
-                                        <span class="carousel-author-position">
-                                            Head of product Jeep
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-wrapper">
-                            <div class="author-img">
-                                <img
-                                    src="assets/main/carousel-section/Rectangle 223.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="carousel-container">
-                                <p class="carousel-text">
-                                    Nós escolhemos a Orbe porque me transmitiu
-                                    segurança, eu tive referências boas e porque
-                                    eles são grandes parceiros.
-                                </p>
-                                <div class="carousel-text-info">
-                                    <div class="companie-logo jeep">
-                                        <img
-                                            src="assets/main/carousel-section/jeep.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <div class="divisor"></div>
-                                    <div class="carousel-text-author">
-                                        <span class="carousel-author"
-                                            >Eduardo Carlos</span
-                                        >
-                                        <span class="carousel-author-position">
-                                            Head of product Jeep
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </section>
 
-            <section id="solutions">
-                <div class="container container-solutions">
-                    <div class="solutions-text">
-                        <h1>Temos as soluções mais completas do mercado!</h1>
-                        <p>
-                            Desenvolvemos soluções inovadoras com a experiência
-                            do usuário
-                        </p>
-                        <span>Saiba Mais</span>
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <section id="solutions">
+                    <div class="container container-solutions">
+                        <div class="solutions-text">
+                            <h1>Temos as soluções mais completas do mercado!</h1>
+                            <p>
+                                Desenvolvemos soluções inovadoras com a experiência
+                                do usuário
+                            </p>
+                            <span>Saiba Mais</span>
+                        </div>
+                        <div class="solutions-cards">
+                            <div class="solution-card">
+                                <div
+                                    class="card-icon"
+                                    style="background-color: #f65423"
+                                >
+                                    <img
+                                        src="./assets/main/solutions-section/card-icons/1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="card-title">Realidade Aumentada</div>
+                                <div class="card-paragraph">
+                                    Projetar experiências de utilização de um
+                                    produto, sistema ou serviço específico.
+                                </div>
+                            </div>
+                            <div class="solution-card">
+                                <div
+                                    class="card-icon"
+                                    style="background-color: #fdc805"
+                                >
+                                    <img
+                                        src="./assets/main/solutions-section/card-icons/1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="card-title">Realidade Virtual</div>
+                                <div class="card-paragraph">
+                                    Projetar experiências de utilização de um
+                                    produto, sistema ou serviço específico.
+                                </div>
+                            </div>
+                            <div class="solution-card">
+                                <div
+                                    class="card-icon"
+                                    style="background-color: #ed45d1"
+                                >
+                                    <img
+                                        src="./assets/main/solutions-section/card-icons/1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="card-title">UX Design</div>
+                                <div class="card-paragraph">
+                                    Projetar experiências de utilização de um
+                                    produto, sistema ou serviço específico.
+                                </div>
+                            </div>
+                            <div class="solution-card">
+                                <div
+                                    class="card-icon"
+                                    style="background-color: #1cca81"
+                                >
+                                    <img
+                                        src="./assets/main/solutions-section/card-icons/1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="card-title">
+                                    Inteligência Artificial
+                                </div>
+                                <div class="card-paragraph">
+                                    Projetar experiências de utilização de um
+                                    produto, sistema ou serviço específico.
+                                </div>
+                            </div>
+                            <div class="solution-card">
+                                <div
+                                    class="card-icon"
+                                    style="background-color: #2281ff"
+                                >
+                                    <img
+                                        src="./assets/main/solutions-section/card-icons/1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="card-title">Desenvolvimento</div>
+                                <div class="card-paragraph">
+                                    Projetar experiências de utilização de um
+                                    produto, sistema ou serviço específico.
+                                </div>
+                            </div>
+                            <div class="solution-card">
+                                <div
+                                    class="card-icon"
+                                    style="background-color: #a460fd"
+                                >
+                                    <img
+                                        src="./assets/main/solutions-section/card-icons/1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="card-title">Automação / IOT</div>
+                                <div class="card-paragraph">
+                                    Projetar experiências de utilização de um
+                                    produto, sistema ou serviço específico.
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="solutions-cards">
-                        <div class="solution-card">
-                            <div
-                                class="card-icon"
-                                style="background-color: #f65423"
-                            >
-                                <img
-                                    src="./assets/main/solutions-section/card-icons/1.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="card-title">Realidade Aumentada</div>
-                            <div class="card-paragraph">
-                                Projetar experiências de utilização de um
-                                produto, sistema ou serviço específico.
-                            </div>
-                        </div>
-                        <div class="solution-card">
-                            <div
-                                class="card-icon"
-                                style="background-color: #fdc805"
-                            >
-                                <img
-                                    src="./assets/main/solutions-section/card-icons/1.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="card-title">Realidade Virtual</div>
-                            <div class="card-paragraph">
-                                Projetar experiências de utilização de um
-                                produto, sistema ou serviço específico.
-                            </div>
-                        </div>
-                        <div class="solution-card">
-                            <div
-                                class="card-icon"
-                                style="background-color: #ed45d1"
-                            >
-                                <img
-                                    src="./assets/main/solutions-section/card-icons/1.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="card-title">UX Design</div>
-                            <div class="card-paragraph">
-                                Projetar experiências de utilização de um
-                                produto, sistema ou serviço específico.
-                            </div>
-                        </div>
-                        <div class="solution-card">
-                            <div
-                                class="card-icon"
-                                style="background-color: #1cca81"
-                            >
-                                <img
-                                    src="./assets/main/solutions-section/card-icons/1.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="card-title">
-                                Inteligência Artificial
-                            </div>
-                            <div class="card-paragraph">
-                                Projetar experiências de utilização de um
-                                produto, sistema ou serviço específico.
-                            </div>
-                        </div>
-                        <div class="solution-card">
-                            <div
-                                class="card-icon"
-                                style="background-color: #2281ff"
-                            >
-                                <img
-                                    src="./assets/main/solutions-section/card-icons/1.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="card-title">Desenvolvimento</div>
-                            <div class="card-paragraph">
-                                Projetar experiências de utilização de um
-                                produto, sistema ou serviço específico.
-                            </div>
-                        </div>
-                        <div class="solution-card">
-                            <div
-                                class="card-icon"
-                                style="background-color: #a460fd"
-                            >
-                                <img
-                                    src="./assets/main/solutions-section/card-icons/1.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="card-title">Automação / IOT</div>
-                            <div class="card-paragraph">
-                                Projetar experiências de utilização de um
-                                produto, sistema ou serviço específico.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
-            <section id="about-projects">
-                <div class="container container-about-projects">
-                    <h1 class="about-title">Como nossos projetos são feitos</h1>
-                    <div class="about-cards">
-                        <div class="about-card">
-                            <span class="card-number">01</span>
-                            <h1 class="card-about-project-title">Descobrir</h1>
-                            <div class="card-divisor"></div>
-                            <p class="card-paragraph-about-projects">
-                                Fazemos uma imersão no problema utilizando
-                                técnicas e ferramentas de pesquisa que geram
-                                insights para o projeto.
-                            </p>
-                        </div>
-                        <div class="about-card">
-                            <span class="card-number">02</span>
-                            <h1 class="card-about-project-title">Projetar</h1>
-                            <div class="card-divisor two"></div>
-                            <p class="card-paragraph-about-projects">
-                                Fazemos uma imersão no problema utilizando
-                                técnicas e ferramentas de pesquisa que geram
-                                insights para o projeto.
-                            </p>
-                        </div>
-                        <div class="about-card">
-                            <span class="card-number">03</span>
-                            <h1 class="card-about-project-title">Construir</h1>
-                            <div class="card-divisor three"></div>
-                            <p class="card-paragraph-about-projects">
-                                Fazemos uma imersão no problema utilizando
-                                técnicas e ferramentas de pesquisa que geram
-                                insights para o projeto.
-                            </p>
-                        </div>
-                        <div class="about-card">
-                            <span class="card-number">04</span>
-                            <h1 class="card-about-project-title">Delivery</h1>
-                            <div class="card-divisor four"></div>
-                            <p class="card-paragraph-about-projects">
-                                Fazemos uma imersão no problema utilizando
-                                técnicas e ferramentas de pesquisa que geram
-                                insights para o projeto.
-                            </p>
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <section id="about-projects">
+                    <div class="container container-about-projects">
+                        <h1 class="about-title">Como nossos projetos são feitos</h1>
+                        <div class="about-cards">
+                            <div class="about-card">
+                                <span class="card-number">01</span>
+                                <h1 class="card-about-project-title">Descobrir</h1>
+                                <div class="card-divisor"></div>
+                                <p class="card-paragraph-about-projects">
+                                    Fazemos uma imersão no problema utilizando
+                                    técnicas e ferramentas de pesquisa que geram
+                                    insights para o projeto.
+                                </p>
+                            </div>
+                            <div class="about-card">
+                                <span class="card-number">02</span>
+                                <h1 class="card-about-project-title">Projetar</h1>
+                                <div class="card-divisor two"></div>
+                                <p class="card-paragraph-about-projects">
+                                    Fazemos uma imersão no problema utilizando
+                                    técnicas e ferramentas de pesquisa que geram
+                                    insights para o projeto.
+                                </p>
+                            </div>
+                            <div class="about-card">
+                                <span class="card-number">03</span>
+                                <h1 class="card-about-project-title">Construir</h1>
+                                <div class="card-divisor three"></div>
+                                <p class="card-paragraph-about-projects">
+                                    Fazemos uma imersão no problema utilizando
+                                    técnicas e ferramentas de pesquisa que geram
+                                    insights para o projeto.
+                                </p>
+                            </div>
+                            <div class="about-card">
+                                <span class="card-number">04</span>
+                                <h1 class="card-about-project-title">Delivery</h1>
+                                <div class="card-divisor four"></div>
+                                <p class="card-paragraph-about-projects">
+                                    Fazemos uma imersão no problema utilizando
+                                    técnicas e ferramentas de pesquisa que geram
+                                    insights para o projeto.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section id="ready-to-expand">
-                <div class="container container-ready">
-                    <div class="ready-text">
-                        <h1>
-                            Pronto para expandir as possibilidades do seu
-                            negócio?
-                        </h1>
-                        <p>
-                            Trabalharemos de forma colaborativa para criar um
-                            projeto realmente incrível.
-                        </p>
-                        <span>Saiba mais</span>
+                </section>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <section id="ready-to-expand">
+                    <div class="container container-ready">
+                        <div class="ready-text">
+                            <h1>
+                                Pronto para expandir as possibilidades do seu
+                                negócio?
+                            </h1>
+                            <p>
+                                Trabalharemos de forma colaborativa para criar um
+                                projeto realmente incrível.
+                            </p>
+                            <span>Saiba mais</span>
+                        </div>
+                        <div class="ready-banner">
+                            <img
+                                src="assets/main/ready-section/ready-banner.png"
+                                alt=""
+                            />
+                        </div>
                     </div>
-                    <div class="ready-banner">
-                        <img
-                            src="assets/main/ready-section/ready-banner.png"
-                            alt=""
-                        />
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
+        
         <footer id="footer">© Orbe Soft 2017 - 2022</footer>
 
         <script src="./scripts/carousel.js"></script>
@@ -575,7 +591,6 @@
         <script src="./scripts/translations/index.js" type="module"></script>
         <script src="scripts/menu-mobile.js"></script>
         <script src="scripts/custom-select.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
