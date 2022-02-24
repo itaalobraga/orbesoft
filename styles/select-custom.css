@@ -47,7 +47,6 @@
 }
 
 .option {
-    padding: 12px 31px;
     cursor: pointer;
 }
 
@@ -56,6 +55,11 @@
 }
 
 .option > label {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 12px 31px;
+    max-width: 150px;
     cursor: pointer;
 }
 

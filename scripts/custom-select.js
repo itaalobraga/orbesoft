@@ -6,9 +6,9 @@ const flag = document.querySelector('.select-flag')
 
 options.forEach((option) => {
     option.addEventListener('click', () => {
-        selected.innerHTML = option.querySelector('label').innerHTML;
+        selected.innerHTML = option.querySelector('span').innerHTML;
         optionsContainer.classList.remove('active')
-        if(option.querySelector('label').innerHTML === 'Brasil') {
+        if(option.querySelector('span').innerHTML === 'Brasil') {
             flag.style.backgroundImage =
             "url('./assets/nav-bar/custom-select-input/br.png')";
         } else {
@@ -35,9 +35,9 @@ const optionsMobile = document.querySelectorAll('.option-mobile');
 const flagMobile = document.querySelector('.select-flag-mobile');
 
 optionsMobile.forEach(elements => elements.addEventListener('click', () => {
-    selectedMobile.innerHTML = elements.querySelector('label').innerHTML;
+    selectedMobile.innerHTML = elements.querySelector('span').innerHTML;
     optionsContainerMobile.classList.remove('active')
-    if(elements.querySelector('label').innerHTML === 'Brasil') {
+    if(elements.querySelector('span').innerHTML === 'Brasil') {
         flagMobile.style.backgroundImage =
             "url('./assets/nav-bar/custom-select-input/br.png')";
     } else {

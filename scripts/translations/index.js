@@ -45,6 +45,11 @@ function handleSelect() {
         selector('.selected').innerHTML = 'EUA';
         selector('.select-flag').style.backgroundImage =
             "url('../assets/nav-bar/custom-select-input/eua.png')";
+
+        selector('.selected-mobile').innerHTML = 'EUA';
+        selector('.select-flag-mobile').style.backgroundImage =
+            "url('../assets/nav-bar/custom-select-input/eua.png')";
+        
     }
 
     return;
