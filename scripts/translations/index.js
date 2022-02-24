@@ -9,12 +9,15 @@ const selector = (element) => {
 };
 
 function hydrate(lng) {
-    const path = window.location.pathname.split('/').filter(Boolean);
+    // const path = window.location.pathname.split('/').filter(Boolean);
 
-    const currentTranslation =
-    !path.length || path[0] === 'index.html' ? translations.home : translations[`${path[0].replace('.html', '')}`];
+    // const currentTranslation =
+    // !path.length || path[0] === 'index.html' ? translations.home : translations[`${path[0].replace('.html', '')}`];
+
+    const currentTranslation = translations.home
 
     currentTranslation.forEach((el) => {
+        // console.log(el)
         selector(el.key).innerHTML = el[lng];
     });
 
