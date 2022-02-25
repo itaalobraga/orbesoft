@@ -3,24 +3,24 @@
     justify-content: center;
     max-width: 1440px;
     width: 100%;
-    background-color: #fdfcfc;
+    background-color: #ffffff;
 }
 
 .container-ready {
     justify-content: space-between;
     align-items: flex-start;
-    height: 100%;
+    min-height: 600px;
     gap: 2.3rem;
-    padding: 3.6rem 5.5rem 0 5.5rem;
 }
 
 .ready-text {
-    width: 40%;
+    margin-top: 6rem;
+    width: 45%;
 }
 
 .ready-banner {
     display: flex;
-    align-items: flex-end;
+    align-self: flex-end;
 }
 
 .ready-banner > img {
@@ -42,7 +42,7 @@
     font-weight: normal;
     font-size: 1.5rem;
     color: #666666;
-    margin: 1.5rem 0 2rem 0;
+    margin: 1.5rem 0 2.5rem 0;
 }
 
 .ready-text span {
@@ -55,11 +55,11 @@
     background: #f65423;
     border-radius: 24px;
     cursor: pointer;
-    transition: .4s;
+    transition: 0.4s;
 }
 
 .ready-text span:hover {
-    opacity: .75;
+    opacity: 0.75;
 }
 
 @media screen and (max-width: 1116px) {
@@ -70,5 +70,6 @@
     }
     .ready-text {
         width: 100%;
+        margin-top: 3rem;
     }
 }

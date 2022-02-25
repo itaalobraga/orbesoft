@@ -56,11 +56,17 @@
 
 .option > label {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
-    padding: 12px 31px;
-    max-width: 150px;
+    gap: .6rem;
+    padding: 12px 0;
+    width: 150px;
     cursor: pointer;
+    /* border: 1px solid blue; */
+}
+
+.option label > span {
+    width: 35%;
 }
 
 .radio {
@@ -75,6 +81,11 @@
     padding: 12px 24px;
     position: relative;
     cursor: pointer;
+    transition: .4s;
+}
+
+.selected:hover {
+    color: #F65423;
 }
 
 .select-flag {
@@ -89,7 +100,6 @@
     left: 4px;
     transition: .4s;
 }
-
 
 .selected::after {
     content: '';
