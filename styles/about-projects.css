@@ -121,6 +121,7 @@
 
     .about-cards {
         flex-direction: column;
+        gap: 5rem;
         min-height: 700px;
     }
 
