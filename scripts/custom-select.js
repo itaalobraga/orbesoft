@@ -10,10 +10,10 @@ options.forEach((option) => {
         optionsContainer.classList.remove('active')
         if(option.querySelector('span').innerHTML === 'Brasil') {
             flag.style.backgroundImage =
-            "url('./assets/nav-bar/custom-select-input/br.png')";
+            "url('./assets/nav-bar/custom-select-input/br.svg')";
         } else {
             flag.style.backgroundImage =
-                "url('./assets/nav-bar/custom-select-input/eua.png')";
+                "url('./assets/nav-bar/custom-select-input/eua.svg')";
         }
     });
 });
@@ -39,10 +39,10 @@ optionsMobile.forEach(elements => elements.addEventListener('click', () => {
     optionsContainerMobile.classList.remove('active')
     if(elements.querySelector('span').innerHTML === 'Brasil') {
         flagMobile.style.backgroundImage =
-            "url('./assets/nav-bar/custom-select-input/br.png')";
+            "url('./assets/nav-bar/custom-select-input/br.svg')";
     } else {
         flagMobile.style.backgroundImage =
-            "url('./assets/nav-bar/custom-select-input/eua.png')";
+            "url('./assets/nav-bar/custom-select-input/eua.svg')";
     }
 
 }))
