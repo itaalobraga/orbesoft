@@ -9,19 +9,29 @@ const selector = (element) => {
 };
 
 function hydrate(lng) {
-  // const path = window.location.pathname.split('/').filter(Boolean);
+  const path = window.location.pathname.split("/").filter(Boolean);
 
-  // const currentTranslation =
-  // !path.length || path[0] === 'index.html' ? translations.home : translations[`${path[0].replace('.html', '')}`];
-
-  const currentTranslation = translations.home;
+  const currentTranslation =
+    !path.length || path[0] === "index.html"
+      ? translations.home
+      : translations[`${path[0].replace(".html", "")}`];
 
   currentTranslation.forEach((el) => {
-    selector(el.key).innerHTML = el[lng]
+    selector(el.key).innerHTML = el[lng];
   });
 
   localStorage.setItem("@orbesoft/currentLang", lng);
   selector("html").lang = lng;
+
+  handleSelectFlag(lng);
+}
+
+function handleSelectFlag(lng) {
+  if (lng === "pt-BR") {
+    return (selector(".select-flag").style.left = "2rem");
+  }
+
+  selector(".select-flag").style.left = "0";
 }
 
 function init() {
@@ -29,6 +39,18 @@ function init() {
     const lng = localStorage.getItem("@orbesoft/currentLang");
 
     hydrate(lng);
+
+    if (lng === "en-US") {
+      selector(".selected").innerHTML = "United States";
+      selector(".select-flag").style.backgroundImage =
+        "url('./assets/nav-bar/custom-select-input/eua.svg')";
+
+      selector(".selected-mobile").innerHTML = "United States";
+      selector(".select-flag-mobile").style.backgroundImage =
+        "url('./assets/nav-bar/custom-select-input/eua.svg')";
+      return;
+    }
+
     return;
   }
 
@@ -40,21 +62,4 @@ function init() {
   selector("#select-en").addEventListener("click", () => hydrate("en-US"));
 })();
 
-function handleSelect() {
-  const lng = localStorage.getItem("@orbesoft/currentLang");
-
-  if (lng === "en-US") {
-    selector(".selected").innerHTML = "EUA";
-    selector(".select-flag").style.backgroundImage =
-      "url('./assets/nav-bar/custom-select-input/eua.svg')";
-
-    selector(".selected-mobile").innerHTML = "EUA";
-    selector(".select-flag-mobile").style.backgroundImage =
-      "url('./assets/nav-bar/custom-select-input/eua.svg')";
-  }
-
-  return;
-}
-
 init();
-handleSelect();

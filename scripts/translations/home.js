@@ -1,10 +1,5 @@
 export const home = [
   {
-    key: "#menu-clients",
-    "pt-BR": "Clientes",
-    "en-US": "Clients",
-  },
-  {
     key: "#menu-about",
     "pt-BR": "Sobre",
     "en-US": "About",
