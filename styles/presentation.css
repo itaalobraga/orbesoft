@@ -28,11 +28,28 @@
 }
 
 .presentation-banner {
-    transition: 1s;
+    position: relative;
+
 }
 
-.presentation-banner:hover {
-    transform: rotate(360deg);
+.circle-green,
+.circle-purple {
+    position: absolute;
+
+    max-width: 190.22px;
+    width: 100%;
+}
+
+.circle-green {
+    right: 0;
+    bottom: 195px;
+
+}
+
+.circle-purple {
+    left: 0;
+    top: 0;
+
 }
 
 .presentation-text h1 {
@@ -65,17 +82,27 @@
         justify-content: center;
     }
 
-    .presentation-banner > img {
-        width: 90%;
-    }
-
     .presentation-arrow {
         display: none;
     }
+
+    .circle-purple {
+        left: .8px;
+        top: 0px;
+
+    }
+
+    .circle-green {
+        bottom: 190px;
+    }
 }
 
-@media screen and (max-width: 580px) {
-    .presentation-banner > img {
-        width: 70%;
+@media screen and (max-width: 435px) {
+    .presentation-banner {
+        display: none;
+    }
+
+    .presentation {
+        min-height: 50vh;
     }
 }

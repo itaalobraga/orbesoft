@@ -71,33 +71,6 @@
     width: 25%;
 }
 
-.card-divisor.two::before {
-    content: '';
-    background: #f65423;
-    border: 1px solid #f65423;
-    position: absolute;
-    left: 0;
-    width: 50%;
-}
-
-.card-divisor.three::before {
-    content: '';
-    background: #f65423;
-    border: 1px solid #f65423;
-    position: absolute;
-    left: 0;
-    width: 75%;
-}
-
-.card-divisor.four::before {
-    content: '';
-    background: #f65423;
-    border: 1px solid #f65423;
-    position: absolute;
-    left: 0;
-    width: 100%;
-}
-
 .card-paragraph-about-projects {
     font-family: Inter;
     font-style: normal;
