@@ -44,7 +44,6 @@
 }
 
 .menu a:hover {
-    /* transform: scale(1.05); */
     color: #f65423;
     box-shadow: 0px 2px 0px #f65423;
 }

@@ -1,27 +1,23 @@
-const menuMobile = document.querySelector('.menu-mobile');
-const btnMenuMobile = document.querySelector('.btn-menu-mobile');
-const btn = document.getElementById('open');
-const body = document.querySelector('body');
-const links = document.querySelectorAll('.menu-mobile a');
+const hamburgerIcon = document.querySelector(".hamburger-icon");
+const navMobile = document.querySelector(".nav-mobile");
+const body = document.querySelector("body");
 
-const openMenu = () => {
-    menuMobile.classList.toggle('active');
-    handleBtn();
+const lockBodyScroll = () => {
+  body.style.overflow === "hidden"
+    ? (body.style.overflow = "scroll")
+    : (body.style.overflow = "hidden");
 };
 
-const handleBtn = () => {
-    body.style.overflow === 'hidden'
-        ? (body.style.overflow = 'scroll')
-        : (body.style.overflow = 'hidden');
+navMobile.addEventListener("click", () => {
+  hamburgerIcon.classList.toggle("active");
+  navMobile.classList.toggle("active");
 
-    const newBtn = document.createElement('li');
-    newBtn.setAttribute('class', 'fa-regular fa-circle-xmark');
+  body.style.overflow = "scroll";
+});
 
-    if (menuMobile.className === 'menu-mobile active') {
-        btnMenuMobile.replaceChildren(newBtn);
-    } else {
-        btnMenuMobile.replaceChildren(btn);
-    }
-};
+hamburgerIcon.addEventListener("click", () => {
+  hamburgerIcon.classList.toggle("active");
+  navMobile.classList.toggle("active");
 
-links.forEach((link) => link.addEventListener('click', openMenu));
+  lockBodyScroll();
+});

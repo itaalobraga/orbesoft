@@ -24,6 +24,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/header-mobile.css" />
     <link rel="stylesheet" href="./styles/nav.css" />
     <link rel="stylesheet" href="./styles/nav-mobile.css" />
     <link rel="stylesheet" href="./styles/main.css" />
@@ -93,60 +95,33 @@
           </div>
         </div>
       </nav>
+    </header>
 
+    <header id="header-mobile">
+      <div class="logo-menu">
+        <img src="./assets/nav-bar/logo.png" alt="" />
+      </div>
+      <div class="hamburger-icon">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
       <nav class="nav-mobile">
-        <div class="logo-menu-mobile">
-          <img src="assets/nav-bar/logo.png" alt="" ; />
-        </div>
-
-        <div class="btn-menu-mobile" onclick="openMenu()">
-          <i id="open" class="fa-solid fa-bars"></i>
-        </div>
-
-        <div class="menu-mobile">
-          <div class="menu">
-            <a href="#companies" id="menu-about">Sobre</a>
-            <a href="#solutions" id="menu-services">Serviços</a>
-            <a href="#" id="menu-cases">Cases</a>
-            <a href="#" id="menu-team">Equipe</a>
-          </div>
-
-          <div class="mobile-wrapper">
-            <div class="select-box-mobile">
-              <div class="select-flag-mobile"></div>
-              <div class="options-container-mobile">
-                <div class="option-mobile" id="select-pt">
-                  <input type="radio" name="option" id="brasil" class="radio-mobile" />
-                  <label for="brasil">
-                    <img
-                      src="./assets/nav-bar/custom-select-input/br.svg"
-                      alt=""
-                      style="max-width: 20px"
-                    /><span>Brasil</span>
-                  </label>
-                </div>
-                <div class="option-mobile" id="select-en">
-                  <input type="radio" name="option" id="eua" class="radio-mobile" />
-                  <label for="eua">
-                    <img
-                      src="./assets/nav-bar/custom-select-input/eua.svg"
-                      alt=""
-                      style="max-width: 20px"
-                    /><span>EUA</span>
-                  </label>
-                </div>
-              </div>
-              <div class="selected-mobile">Brasil</div>
-            </div>
-
-            <div class="btn-contact-menu">
-              <a href="#" id="btn-contact-mobile">CONTATO</a>
-              <img src="./assets/nav-bar/arrow-right.png" alt="" />
-            </div>
-          </div>
+        <ul>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Cases</a></li>
+          <li><a href="#">Equipe</a></li>
+        </ul>
+        <div class="button-wrapper">
+          <button type="button" class="btn-contact-mobile">
+          <a href="#">CONTATO</a>
+        </button>
         </div>
       </nav>
     </header>
+
     <main id="main">
       <div data-aos="fade-up" data-aos-duration="2000">
         <section class="presentation">
